@@ -1,8 +1,9 @@
 {
   "name": "traduire",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple i18n translator using explicit typescript models",
   "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "scripts": {
     "clean": "rm -rf ./dist",
     "build": "npm run clean && tsc",
