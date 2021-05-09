@@ -29,4 +29,8 @@ export class Traduire<T> {
   _(key: keyof T, ctx: TransDataToInject = {}): string {
     return ((key in this._lookup) ? template(String(this._lookup[key]), ctx) : `[${key}]`);
   }
+
+  keys(): string[] {
+    return Object.keys(this._lookup);
+  }
 }

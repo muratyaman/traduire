@@ -46,4 +46,7 @@ describe('Traduire', () => {
   it('should translate title to fr', () => {
     expect(tFr._('title', params)).to.equal('Page d\'accueil');
   });
+  it('should return keys', () => {
+    expect(tFr.keys()).to.deep.eq(['welcome', 'title', 'label']);
+  });
 });

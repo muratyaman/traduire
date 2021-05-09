@@ -1,6 +1,6 @@
 {
   "name": "traduire",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "simple i18n translator using explicit typescript models",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
@@ -10,6 +10,9 @@
     "test": "mocha --require ts-node/register ./src/tests/**/*.test.ts",
     "test:coverage": "nyc npm run test"
   },
+  "files": [
+    "dist"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/muratyaman/traduire.git"
@@ -19,7 +22,7 @@
     "translate"
   ],
   "author": "Haci Murat Yaman",
-  "license": "ISC",
+  "license": "LICENSE",
   "bugs": {
     "url": "https://github.com/muratyaman/traduire/issues"
   },
